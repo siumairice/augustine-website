@@ -115,6 +115,7 @@ h2{
 .placeholder{
     height: 200px;
     display: block;
+    border-radius: 12px;
 }
 
 .main-content{
