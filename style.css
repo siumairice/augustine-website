@@ -38,9 +38,17 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+h1{
+    font-size: 48px;
+    font-weight: bolder;
+}
 
-/*section one*/
-#section-one{
+h2{
+    font-size: 36px;
+}
+
+/*navigation-bar*/
+#navigation-bar{
     background-color: rgba(0, 0, 0, 0.87);
     min-height: 30%;
     padding: 20px;
@@ -48,21 +56,21 @@
     gap: 40px;
 }
 
-#section-one, a{
+#navigation-bar, a{
     color:#F9FAF8;
     font-weight: bold;
     text-decoration: none;
 }
 
-#section-one, a:hover{
+#navigation-bar, a:hover{
     color: grey;
     font-weight: bold;
     text-decoration: none;
 }
 
-/*section two*/
+/*join-pageo*/
 
-#section-two{
+#join-page{
     background-color: white;
     min-height: 300px;
     padding: 20px;
@@ -109,8 +117,8 @@
 .sign-up:hover {
     background-color: #5cadbb
 }
-
-#section-three{
+/* about page*/
+#about-page{
     background-color: rgb(190, 197, 211);
     min-height: 300px;
     padding: 150px 200px;
@@ -119,7 +127,9 @@
     color: rgba(0, 0, 0, 0.842);
 }
 
-#section-four{
+/*club-page*/
+
+#club-page{
     background-color: rgba(0, 0, 0, 0.87);;
     min-height: 300px;
     padding: 100px 20px;
@@ -159,7 +169,7 @@
     border-radius: 15px;    
 }
 
-#section-five{
+#resources{
     background-color: rgb(40, 107, 184);
     min-height: 300px;
     padding: 100px 100px;
@@ -196,17 +206,16 @@
     margin:0;
 }
 
-#section-six{
+#contact{
     background-color: white;
     height: 200px;
+    padding: 150px 400px 150px 150px;
 }
 
 #contact-header{
     color:rgba(0, 0, 0, 0.87)
 }
-#section-six{
-    padding: 150px 400px 150px 150px;
-}
+
 #footer{
     background-color: rgba(0, 0, 0, 0.87);;
     min-height: 30%;
@@ -214,4 +223,5 @@
     display: flex;
     gap: 40px;
     color:white;
+    justify-content: center;
 }
