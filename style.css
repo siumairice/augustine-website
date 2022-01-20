@@ -53,12 +53,27 @@ h2{
     background-color: rgba(0, 0, 0, 0.87);
     padding: 20px;
     display: flex;
-    gap: 40px;
     width:100%;
     top:0;
-    position:fixed;
+    position: sticky;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
+.left-links, .right-links{
+    display: flex;
+    align-items:center;
+}
+
+.left-links{
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.right-links{
+    
+    gap: 20px;
+}
 #navigation-bar, a{
     color:#F9FAF8;
     font-weight: bold;
@@ -71,7 +86,7 @@ h2{
     text-decoration: none;
 }
 
-/*join-pageo*/
+/*join-page*/
 
 #join-page{
     background-color: white;
@@ -99,6 +114,7 @@ h2{
 
 .placeholder{
     height: 200px;
+    display: block;
 }
 
 .main-content{
@@ -230,19 +246,12 @@ h2{
 
 
 
-/**/
-
+/*
 .container {
     position: relative;
     width: 50%;
   }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
+
   .overlay {
     position: absolute;
     top: 0;
@@ -271,3 +280,4 @@ h2{
     transform: translate(-50%, -50%);
     text-align: center;
   }
+  */
