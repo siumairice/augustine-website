@@ -1,35 +1,3 @@
-/* fonts */
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('./Roboto/Roboto-Regular.ttf');
-  }
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('./Roboto/Roboto-Black.ttf');
-    font-weight: bolder;
-  }
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('./Roboto/Roboto-Bold.ttf');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('./Roboto/Roboto-LightItalic.ttf');
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('./Roboto/Roboto-Light.ttf');
-    font-weight: lighter;
-}
-
-
 /*universal*/
 
 *{
@@ -37,6 +5,7 @@
     margin: 0px;
     font-family: 'Quicksand', sans-serif;
     scroll-behavior: smooth;
+    
 }
 
 h1{
@@ -48,16 +17,20 @@ h2{
     font-size: 36px;
 }
 
+section{
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+
 /*navigation-bar*/
 #navigation-bar{
     background-color: rgba(0, 0, 0, 0.87);
     padding: 20px;
     display: flex;
-    width:100%;
     top:0;
     position: sticky;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .left-links, .right-links{
@@ -80,10 +53,8 @@ h2{
     text-decoration: none;
 }
 
-#navigation-bar, a:hover{
+#navigation-bar a:hover{
     color: grey;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 /*join-page*/
@@ -113,7 +84,8 @@ h2{
 }
 
 .placeholder{
-    height: 200px;
+    max-height: 200px;
+
     display: block;
     border-radius: 12px;
 }
@@ -128,9 +100,9 @@ h2{
     font-size: 18px;
     color:#F9FAF8;
     border: none;
-    border-radius: 5px;
     padding: 8px 32px;
     margin-top: 16px;
+    border-radius: 5px;
 }
 
 .sign-up:hover {
@@ -204,6 +176,7 @@ h2{
     color: rgba(255, 255, 255, 0.671);
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .res-link{
@@ -237,13 +210,21 @@ h2{
 
 #footer{
     background-color: rgba(0, 0, 0, 0.87);;
-    min-height: 30%;
     padding: 20px;
-    display: flex;
-    gap: 40px;
     color:white;
-    justify-content: center;
+    text-align: center;
+
+    width: 100%;
 }
+
+body{
+    margin: 0;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
 
 
 
